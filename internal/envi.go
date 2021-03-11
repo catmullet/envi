@@ -127,7 +127,6 @@ func (envi *Envi) Save(f *os.File) error {
 	}
 
 	_ = f.Sync()
-
 	if err := f.Close(); err != nil {
 		return err
 	}
