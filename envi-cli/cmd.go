@@ -101,8 +101,6 @@ func edit(c *cli.Context) (err error) {
 		return err
 	}
 
-	defer deferror.As(cf.Close, &err)
-
 	nf, err := os.Create(tmpFilename)
 	if err != nil {
 		return err
@@ -133,6 +131,7 @@ func edit(c *cli.Context) (err error) {
 
 	defer os.Remove(tmpFilename)
 	defer deferror.As(nf.Close, &err)
+	defer deferror.As(nf.Sync, &err)
 
 	data, err := ioutil.ReadAll(nf)
 	if err != nil {
