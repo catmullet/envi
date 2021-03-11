@@ -18,8 +18,8 @@ go install github.com/catmullet/envi/envi-cli
 ## Running with it
 #### Initialize and edit an envi.yaml within your project.
 ![](https://raw.githubusercontent.com/catmullet/envi/assets/envi_edit.gif)
-- From the root of your project run ```shell envi-cli init```.
-- To edit the file run ```shell envi-cli edit```. This will start up either your default editor defined by the `EDITOR` environment variable or it will default to vim.
+- From the root of your project run ```envi-cli init```.
+- To edit the file run ```envi-cli edit```. This will start up either your default editor defined by the `EDITOR` environment variable or it will default to vim.
 #### Run with your `envi.SetEnv(<environment>)` function.
 ```go
 package main
