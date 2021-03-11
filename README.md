@@ -45,3 +45,8 @@ func main() {
 ![](https://raw.githubusercontent.com/catmullet/envi/assets/envi_yamledit.png)
 #### Run the app and check the results
 ![](https://raw.githubusercontent.com/catmullet/envi/assets/envi-test_results.png)
+
+## Viewing envi.yaml
+#### For anyone else without your key it's just encrypted garbage
+![](https://raw.githubusercontent.com/catmullet/envi/assets/envi-encrypted.png)
+#### For you use envi-cli edit or follow Google's documentation to decrypt with gcloud CLI (https://cloud.google.com/kms/docs/creating-keys)
